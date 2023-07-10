@@ -1,2 +1,15 @@
 @import './common';
-@import './example';
+
+//utils
+@import './utils/variables';
+@import './utils/sections';
+
+// base styles
+@import './base/reset';
+@import './base/container';
+@import './base/body';
+
+//layouts
+@import './layouts/header';
+@import './layouts/main';
+@import './layouts/footer';

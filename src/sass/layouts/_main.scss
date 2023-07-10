@@ -1,0 +1,31 @@
+.hero-title {
+  color: $title-text-color;
+  font-size: 74px;
+  font-weight: 800;
+  line-height: 114.5%;
+  margin-bottom: 48px;
+}
+
+.hero-subtitle {
+  text-align: justify;
+  font-size: 74px;
+  font-weight: 700;
+  letter-spacing: 1.11px;
+  line-height: 120%;
+  margin-bottom: 27px;
+}
+
+.hero-text {
+  font-size: 30px;
+  line-height: 114.5%;
+  margin-bottom: 74px;
+}
+
+.qr-cod {
+  display: flex;
+  gap: 64;
+}
+
+.qr-cod__text {
+  width: 360px;
+}
