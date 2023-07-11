@@ -1,9 +1,16 @@
+.hero {
+  display: flex;
+  flex-wrap: nowrap;
+  position: relative;
+}
+
 .hero-title {
   color: $title-text-color;
   font-size: 74px;
   font-weight: 800;
   line-height: 114.5%;
   margin-bottom: 48px;
+  font-style: normal;
 }
 
 .hero-subtitle {
@@ -19,13 +26,109 @@
   font-size: 30px;
   line-height: 114.5%;
   margin-bottom: 74px;
+  text-align: justify;
+  width: 750px;
 }
 
 .qr-cod {
   display: flex;
   gap: 64;
+  color: $secondary-text-color;
+  text-align: justify;
+  font-size: 33px;
+  line-height: normal;
 }
 
 .qr-cod__text {
-  width: 360px;
+  width: 361px;
+
+  & span {
+    font-weight: bold;
+  }
+}
+
+.qr-cod_link {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 13px;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  transition: color 250ms ease;
+  &:hover,
+  &:focus {
+    color: $title-text-color;
+  }
+}
+.hero__description {
+  border: 1px solid green;
+  width: 825px;
+  flex-shrink: 0;
+}
+
+.qr-cod__img {
+  margin-top: 15px;
+  width: 154px;
+  height: 154px;
+}
+
+.hero__background {
+  position: absolute;
+  left: 366px;
+  top: 0;
+  width: 1553px;
+  height: 1010px;
+  transform: rotate(-90deg);
+  flex-shrink: 0;
+  border: 1px solid red;
+  background: $gradient;
+  overflow: hidden;
+  z-index: -2;
+
+  & img {
+    position: absolute;
+    top: -130px;
+    right: 460px;
+    transform: rotate(90deg);
+    display: block;
+    width: 800px;
+  }
+}
+
+///----ROOLS----///
+.rools {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.rools__title {
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  color: $secondary-text-color;
+}
+
+.rools__list {
+  display: flex;
+  gap: 93px;
+  margin-top: 50px;
+}
+
+.rools__item {
+  width: 472px;
+  border-radius: 61px;
+  border: 3px solid var(--green-green-700, #2eca3e);
+}
+
+.rools__wafe {
+  display: flex;
+  position: absolute;
+  top: -90;
+  right: -350;
+  width: 2878px;
+  height: 946px;
+  flex-shrink: 0;
+  z-index: -1;
+  border: 3px solid red;
 }
