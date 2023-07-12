@@ -62,7 +62,6 @@
   }
 }
 .hero__description {
-  border: 1px solid green;
   width: 825px;
   flex-shrink: 0;
 }
@@ -75,20 +74,19 @@
 
 .hero__background {
   position: absolute;
-  left: 366px;
+  left: 305px;
   top: 0;
   width: 1553px;
   height: 1010px;
   transform: rotate(-90deg);
   flex-shrink: 0;
-  border: 1px solid red;
   background: $gradient;
   overflow: hidden;
   z-index: -2;
 
   & img {
     position: absolute;
-    top: -130px;
+    top: -126px;
     right: 460px;
     transform: rotate(90deg);
     display: block;
@@ -101,12 +99,14 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 .rools__title {
   font-size: 60px;
   font-style: normal;
   font-weight: 700;
   color: $secondary-text-color;
+  line-height: 120%;
 }
 
 .rools__list {
@@ -116,19 +116,130 @@
 }
 
 .rools__item {
-  width: 472px;
+  width: 383px;
+  &.bigger {
+    width: 472px;
+  }
+}
+
+.rools__step {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 0;
+  width: 100%;
+  height: 90px;
   border-radius: 61px;
   border: 3px solid var(--green-green-700, #2eca3e);
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  color: $secondary-text-color;
+
+  &::after {
+    content: ' ';
+    position: absolute;
+    bottom: 45px;
+    left: 472px;
+    width: 94px;
+    height: 3px;
+    background-color: $secondary-text-color;
+  }
+
+  & > p {
+    margin-left: 20px;
+  }
 }
 
 .rools__wafe {
   display: flex;
   position: absolute;
-  top: -90;
-  right: -350;
-  width: 2878px;
+  top: 0;
+  left: -20;
+  width: 1878px;
   height: 946px;
   flex-shrink: 0;
   z-index: -1;
-  border: 3px solid red;
+}
+
+.rools__description {
+  margin-top: 26px;
+}
+
+///----contest---///
+
+.contest {
+  padding-top: 45px;
+  padding-bottom: 80px;
+  position: relative;
+  display: flex;
+
+  width: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+
+  &__img {
+    width: 506.716px;
+    height: 491.411px;
+    flex-shrink: 0;
+  }
+}
+
+.contest__description {
+  margin-left: 120px;
+  text-align: justify;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  margin-top: 125px;
+}
+
+.contest__subtitle {
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 103%;
+  letter-spacing: 1.35px;
+  color: $secondary-text-color;
+  margin-bottom: 25px;
+}
+
+.contest__title {
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 114.5%;
+}
+
+.contest__text {
+  margin-top: 33px;
+  margin-bottom: 33px;
+
+  & span {
+    font-weight: bold;
+  }
+}
+
+.contest__link {
+  font-weight: 600;
+  transition: $animationColor;
+
+  &:hover,
+  &:focus {
+    color: $title-text-color;
+  }
+}
+
+.contest__wafe {
+  display: flex;
+  position: absolute;
+  top: 0px;
+  left: -20;
+  width: 1553px;
+  height: 1010px;
+  transform: rotate(-3deg);
+  flex-shrink: 0;
+  z-index: -1;
+  overflow: hidden;
 }
