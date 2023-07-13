@@ -50,7 +50,7 @@
 .qr-cod_link {
   display: block;
   margin-top: 15px;
-  margin-bottom: 13px;
+  margin-bottom: 10px;
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
@@ -110,6 +110,7 @@
 }
 
 .rools__list {
+  position: relative;
   display: flex;
   gap: 93px;
   margin-top: 50px;
@@ -119,6 +120,26 @@
   width: 383px;
   &.bigger {
     width: 472px;
+  }
+
+  &:first-child:after {
+    content: ' ';
+    position: absolute;
+    bottom: 225px;
+    left: 378px;
+    width: 94px;
+    height: 3px;
+    background-color: $title-text-color;
+  }
+
+  &:nth-child(2):after {
+    content: ' ';
+    position: absolute;
+    bottom: 225px;
+    left: 938px;
+    width: 94px;
+    height: 3px;
+    background-color: $title-text-color;
   }
 }
 
@@ -136,16 +157,6 @@
   font-weight: 600;
   color: $secondary-text-color;
 
-  &::after {
-    content: ' ';
-    position: absolute;
-    bottom: 45px;
-    left: 472px;
-    width: 94px;
-    height: 3px;
-    background-color: $secondary-text-color;
-  }
-
   & > p {
     margin-left: 20px;
   }
@@ -154,10 +165,10 @@
 .rools__wafe {
   display: flex;
   position: absolute;
-  top: 0;
-  left: -20;
-  width: 1878px;
-  height: 946px;
+  top: -40px;
+  left: -10;
+  width: 1878.427px;
+  height: 946.938px;
   flex-shrink: 0;
   z-index: -1;
 }
@@ -169,14 +180,14 @@
 ///----contest---///
 
 .contest {
-  padding-top: 45px;
+  margin-top: 45px;
   padding-bottom: 80px;
+  padding-right: 200px;
   position: relative;
   display: flex;
-
-  width: 100%;
-  overflow: hidden;
+  width: 1610px;
   flex-shrink: 0;
+  overflow: hidden;
 
   &__img {
     width: 506.716px;
@@ -234,12 +245,11 @@
 .contest__wafe {
   display: flex;
   position: absolute;
-  top: 0px;
-  left: -20;
-  width: 1553px;
-  height: 1010px;
-  transform: rotate(-3deg);
+  top: -40px;
+  left: -10;
+  width: 1878.427px;
+  height: 946.938px;
+  transform: rotate(-1deg);
   flex-shrink: 0;
   z-index: -1;
-  overflow: hidden;
 }
